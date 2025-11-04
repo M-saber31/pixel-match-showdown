@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
       </h1>
       
       {/* Contact Form Container */}
-      <div className="box-border w-[1276px] h-auto min-h-[500px] absolute z-10 m-0 p-0 left-[86px] top-[349px] max-md:w-[calc(100%_-_80px)] max-md:left-10 max-md:top-[280px] max-sm:w-[calc(100%_-_40px)] max-sm:flex-col max-sm:left-5 max-sm:top-[200px]">
+      <div className="box-border w-[1276px] h-auto min-h-[500px] absolute z-10 m-0 p-0 left-[86px] top-[380px] max-md:w-[calc(100%_-_80px)] max-md:left-10 max-md:top-[300px] max-sm:w-[calc(100%_-_40px)] max-sm:flex-col max-sm:left-5 max-sm:top-[220px]">
         {/* Form Background */}
         <div className="box-border w-full h-full absolute rounded-[19.234px] border-[1.202px] border-solid border-[rgba(255,255,255,0.06)] bg-gradient-radial from-[rgba(92,124,230,0.10)] to-[rgba(244,244,244,0.05)] shadow-[0_0_16px_0_rgba(0,0,0,0.15)] backdrop-blur-[10px] top-0 left-0" />
         
