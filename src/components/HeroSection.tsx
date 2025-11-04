@@ -5,7 +5,7 @@ import ContactForm from './ContactForm';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="box-border w-full h-[1000px] relative overflow-hidden m-0 p-0 max-md:h-[800px] max-sm:h-[600px]">
+    <section className="box-border w-full h-[1000px] relative overflow-hidden m-0 p-0 max-md:h-[800px] max-sm:h-[600px] max-w-[100vw]">
       {/* Background */}
       <div className="box-border w-full h-full absolute z-[1] bg-[#0D0229] m-0 p-0 left-0 top-0" />
       

@@ -2,7 +2,7 @@ import React from 'react';
 
 const DiscoverySection: React.FC = () => {
   return (
-    <section className="box-border w-full h-[1000px] relative m-0 p-0">
+    <section className="box-border w-full h-[1000px] relative m-0 p-0 overflow-x-hidden">
       {/* Background */}
       <div className="box-border w-full h-full absolute m-0 p-0 left-0 top-0">
         <div className="box-border w-full h-full absolute bg-[#F4F4F4] m-0 p-0 left-0 top-0" />

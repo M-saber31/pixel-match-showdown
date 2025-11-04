@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="box-border w-full h-[253px] relative m-0 p-0 max-sm:h-auto max-sm:px-0 max-sm:py-10">
+    <footer className="box-border w-full h-[253px] relative m-0 p-0 max-sm:h-auto max-sm:px-0 max-sm:py-10 overflow-x-hidden">
       {/* Background */}
       <div className="box-border w-full h-full absolute bg-[#13033D] m-0 p-0 left-0 top-0" />
       

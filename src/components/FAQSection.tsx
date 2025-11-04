@@ -39,7 +39,7 @@ const FAQSection: React.FC = () => {
   const [openItem, setOpenItem] = useState<string>('faq-1');
 
   return (
-    <section className="box-border w-full relative bg-[#F4F4F4] m-0 px-0 py-20">
+    <section className="box-border w-full relative bg-[#F4F4F4] m-0 px-0 py-20 overflow-x-hidden">
       <div className="box-border w-[1300px] h-[880px] relative mx-auto my-0 p-0 max-md:w-[calc(100%_-_80px)] max-md:mx-10 max-md:my-0 max-sm:w-[calc(100%_-_40px)] max-sm:mx-5 max-sm:my-0">
         {/* Section Title */}
         <div className="box-border w-[1036px] h-[68px] mt-0 mb-[104px] mx-auto p-0">
