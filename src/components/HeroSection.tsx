@@ -37,18 +37,20 @@ const HeroSection: React.FC = () => {
       </h1>
       
       {/* Contact Form Container */}
-      <div className="box-border w-[1276px] h-[500px] absolute z-10 m-0 p-0 left-[86px] top-[349px] max-md:w-[calc(100%_-_80px)] max-md:h-[450px] max-md:left-10 max-md:top-[280px] max-sm:w-[calc(100%_-_40px)] max-sm:h-auto max-sm:flex-col max-sm:left-5 max-sm:top-[200px]">
+      <div className="box-border w-[1276px] h-auto min-h-[500px] absolute z-10 m-0 p-0 left-[86px] top-[349px] max-md:w-[calc(100%_-_80px)] max-md:left-10 max-md:top-[280px] max-sm:w-[calc(100%_-_40px)] max-sm:flex-col max-sm:left-5 max-sm:top-[200px]">
         {/* Form Background */}
         <div className="box-border w-full h-full absolute rounded-[19.234px] border-[1.202px] border-solid border-[rgba(255,255,255,0.06)] bg-gradient-radial from-[rgba(92,124,230,0.10)] to-[rgba(244,244,244,0.05)] shadow-[0_0_16px_0_rgba(0,0,0,0.15)] backdrop-blur-[10px] top-0 left-0" />
         
         {/* Vertical Divider */}
-        <div className="absolute w-px h-full bg-[rgba(244,244,244,0.1)] left-[556px] top-0" />
+        <div className="absolute w-px h-full bg-[rgba(244,244,244,0.1)] right-[556px] top-0 max-sm:hidden" />
         
         {/* Contact Form */}
-        <ContactForm />
+        <div className="absolute right-[81px] top-[50px] max-md:right-10 max-sm:relative max-sm:right-auto max-sm:top-auto max-sm:w-full">
+          <ContactForm />
+        </div>
         
         {/* Contact Information */}
-        <div className="box-border w-[213px] h-[340px] absolute flex flex-col items-start gap-[50px] m-0 p-0 left-[298px] top-[84px] max-md:left-10 max-sm:relative max-sm:w-full max-sm:mt-5 max-sm:p-5 max-sm:left-auto">
+        <div className="box-border w-[213px] h-[340px] absolute flex flex-col items-start gap-[50px] m-0 p-0 left-[298px] top-[50px] max-md:left-10 max-sm:relative max-sm:w-full max-sm:mt-5 max-sm:p-5 max-sm:left-auto max-sm:pb-8">
           <div className="box-border flex h-20 flex-col items-end gap-2 self-stretch m-0 p-0">
             <div className="box-border flex-[1_0_0] self-stretch text-[rgba(244,244,244,0.60)] text-right text-lg font-light leading-7 m-0 p-0">
               بريدنا الالكتروني

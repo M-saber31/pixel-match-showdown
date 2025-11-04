@@ -29,8 +29,8 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="box-border flex w-[466px] flex-col items-end gap-6 absolute h-[332px] m-0 p-0 right-[81px] top-[84px] max-md:w-[400px] max-md:right-10 max-sm:w-full max-sm:relative max-sm:px-5 max-sm:py-10 max-sm:right-auto">
-      <form onSubmit={handleSubmit(onSubmit)} className="box-border flex flex-col items-start gap-9 self-stretch m-0 p-0">
+    <div className="box-border flex w-full max-w-[500px] flex-col items-center gap-6 relative m-0 p-8 max-md:p-6 max-sm:px-5 max-sm:py-8">
+      <form onSubmit={handleSubmit(onSubmit)} className="box-border flex flex-col items-start gap-6 self-stretch m-0 p-0 w-full">
         <div className="box-border flex flex-col items-end gap-2.5 self-stretch m-0 p-0">
           <label htmlFor="fullName" className="box-border self-stretch text-[#F4F4F4] text-right text-lg font-light leading-7 m-0 p-0 max-sm:text-base">
             الاسم الكامل
@@ -100,15 +100,17 @@ const ContactForm: React.FC = () => {
           )}
         </div>
 
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="box-border flex w-[162px] h-12 justify-center items-center gap-2 border m-0 px-6 py-2 rounded-[999px] border-solid border-white hover:bg-white hover:text-[#0D0229] transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          <span className="box-border text-lg font-medium leading-7 m-0 p-0 max-sm:text-base">
-            {isSubmitting ? 'جاري الإرسال...' : 'ارسال'}
-          </span>
-        </button>
+        <div className="box-border flex justify-center w-full mt-3">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="box-border flex w-[162px] h-12 justify-center items-center gap-2 border m-0 px-6 py-2 rounded-[999px] border-solid border-white hover:bg-white hover:text-[#0D0229] transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <span className="box-border text-lg font-medium leading-7 m-0 p-0 max-sm:text-base">
+              {isSubmitting ? 'جاري الإرسال...' : 'ارسال'}
+            </span>
+          </button>
+        </div>
       </form>
     </div>
   );
